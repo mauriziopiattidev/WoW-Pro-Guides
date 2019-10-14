@@ -346,7 +346,7 @@ function WoWPro.RowSet()
 	WoWPro.RowColorSet()
 	WoWPro.RowFontSet()
 	WoWPro.RowSizeSet()
-	WoWPro.AnchorSet()
+	-- WoWPro.AnchorSet()
 end
 
 function WoWPro.CustomizeFrames()
@@ -508,14 +508,14 @@ function WoWPro:CreateTitleBar()
 			WoWPro.MainFrame:StartSizing("TOP")
 			WoWPro.MainFrame:SetHeight(WoWPro.Titlebar:GetHeight())
 			WoWPro.MainFrame:StopMovingOrSizing()
-			WoWPro.AnchorSet()
+			-- WoWPro.AnchorSet()
 		else
 			WoWPro.GuideFrame:Show()
 			if WoWPro.StickyHide then WoWPro.StickyFrame:Show(); WoWPro.StickyHide = false end
 			WoWPro.MainFrame:StartSizing("TOP")
 			WoWPro.MainFrame:SetHeight(WoWPro.OldHeight)
 			WoWPro.MainFrame:StopMovingOrSizing();
-			WoWPro.AnchorSet()
+			-- WoWPro.AnchorSet()
 			WoWPro:UpdateGuide("DoubleClick")
 		end
 	end)
